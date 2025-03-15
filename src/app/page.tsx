@@ -1,10 +1,17 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/home/hero-section";
+import BgGradient from "@/components/common/bg-gradient";
+import DemoSection from "@/components/home/demo-section";
+import HowItWorksSection from "@/components/home/how-it-works-section";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-2xl font-bold">Home</h1>
-      <Button variant="outline">Shadcn Button</Button>
+    <div className="relative w-full">
+      <BgGradient />
+      <div className="flex flex-col">
+        <HeroSection />
+        <DemoSection />
+        <HowItWorksSection />
+      </div>
     </div>
   );
 }
